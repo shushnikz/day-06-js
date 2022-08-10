@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // var age=21;
+        // const p=new Promise((resolve,reject)=>{
+        //     if(age>20){
+        //         resolve("Eligible for voting")
+        //     }
+        //     else{
+        //         reject("Not Eligible for voting")
+        //     }
+        // })
+
+        // p.then((res)=>{
+        //     console.log(res)
+        // })
+
+        // .catch((err)=>{
+        //     console.log(err)
+        // })
+
+        var age1=prompt("Enter the age:")
+        const p1=new Promise((resolve,reject)=>{
+            if(age1>20){
+                resolve("Eligible for voting")
+            }
+            else{
+                reject("Not Eligible for voting")
+            }
+        })
+
+        p1.then((res)=>{
+            console.log(res)
+        })
+
+        .catch((err)=>{
+            console.log(err)
+        })
+    </script>
+</body>
+</html>
